@@ -1,16 +1,16 @@
 import React from "react";
 import "./styles.scss";
 
-const Article = () => {
+interface IProps {
+  title: string;
+  content: string;
+}
+
+const Article = ({ title, content }: IProps) => {
   return (
     <div className="article">
-      <h2>Titulo</h2>
-      <div className="content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque mollitia
-        nihil quod totam veniam eaque magnam vero expedita, saepe minus quasi
-        necessitatibus fugiat consequatur in praesentium provident. Dicta, iure
-        qui.
-      </div>
+      <h2>{title}</h2>
+      <div className="content">{content}</div>
     </div>
   );
 };
