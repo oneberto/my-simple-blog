@@ -1,0 +1,42 @@
+.createArticle {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+
+  button {
+    margin-right: auto;
+    font-size: 1.1rem;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  label {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  input {
+    /* height: 45px; */
+  }
+
+  textarea {
+    height: 300px;
+  }
+
+  input,
+  textarea {
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+}
